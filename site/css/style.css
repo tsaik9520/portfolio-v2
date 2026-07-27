@@ -142,6 +142,16 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.hero-avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
 .hero-eyebrow {
   color: var(--color-primary);
   font-weight: 600;
