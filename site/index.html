@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Tsai — Cloud Engineer</title>
+  <meta name="description" content="Kevin Tsai — Cloud Engineer specializing in AWS, Terraform, and platform engineering." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="nav-brand">Kevin Tsai</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="top" class="hero">
+      <div class="container">
+        <p class="hero-eyebrow">Cloud Engineer @ MassMutual</p>
+        <h1>Kevin Tsai</h1>
+        <p class="hero-tagline">
+          I build cloud infrastructure and platform automation on AWS — Terraform modules,
+          self-service provisioning, and CI/CD enablement at enterprise scale.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I'm a Cloud Engineer at MassMutual working across AWS and Azure to build governed,
+          self-service infrastructure platforms. My work spans Terraform module authorship,
+          landing zone automation, DNS/IPAM tooling, and the CI/CD pipelines that let engineering
+          teams provision infrastructure safely and quickly. I hold an M.S. in Software Development
+          from Boston University and a B.S. in Information Science from the University of Maryland,
+          College Park.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="timeline-item">
+          <div class="timeline-heading">
+            <h3>Cloud Engineer</h3>
+            <span class="timeline-meta">MassMutual · Boston, MA · June 2022 – Present</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              <strong>Infoblox DDI:</strong> Partnered with the DNS engineering team and Infoblox to implement
+              Universal DDI (DNS, DHCP, IPAM) for centralized network discovery and IP address management,
+              deploying an AWS CloudFormation StackSet across 150+ AWS accounts and Azure service principals
+              with Reader access across all management subscriptions.
+            </li>
+            <li>
+              <strong>NIOS-X Rollout:</strong> Deployed Infoblox NIOS-X virtual appliances across AWS as the
+              next phase of the DDI rollout, extending core DNS and IPAM protocol services into cloud-native
+              infrastructure.
+            </li>
+            <li>
+              <strong>Sandbox Landing Zone:</strong> Architected the Basecamp Reusable Sandbox Landing Zone
+              platform using ServiceNow Flow Designer, REST APIs, SNS, and GitHub Actions, enabling
+              self-service AWS sandbox provisioning across 20+ AWS accounts and reducing cloud account setup
+              from days to minutes.
+            </li>
+            <li>
+              <strong>Terraform Modules:</strong> Authored 10+ production Terraform service modules (AWS
+              Bedrock, Lambda, RDS, S3 Glacier, Security Groups, EMR, AWS Connect) aligned to enterprise
+              governance standards, and implemented an automated testing framework using Claude Skills to
+              validate provider version upgrades across the module library.
+            </li>
+            <li>
+              <strong>ITOM Automation:</strong> Designed and deployed an AWS Lambda automation that
+              automatically configures ServiceNow ITOM monitoring on EC2 instances launched from Golden AMIs,
+              eliminating manual setup and ensuring operational visibility at launch.
+            </li>
+            <li>
+              <strong>Swift CPE Dashboard:</strong> Built a platform engineering metrics pipeline aggregating
+              GitHub Actions, Jenkins, and runner usage data into a centralized metrics store, giving
+              engineering leadership visibility into CI/CD adoption and capacity planning.
+            </li>
+            <li>
+              <strong>Cost &amp; Governance:</strong> Developed CloudWatch, Cost Explorer, and Tableau
+              dashboards that surfaced infrastructure utilization trends and tagging compliance, identifying
+              over $200K in potential annualized cost savings and raising tagging compliance from 65% to 95%.
+            </li>
+            <li>
+              <strong>CI/CD &amp; Enablement:</strong> Integrated ServiceNow with Terraform Cloud and GitHub
+              Actions to automate infrastructure provisioning through approval workflows, and delivered 10+
+              enablement sessions onboarding 50+ engineers, contributing to an 80% increase in self-service
+              platform adoption.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Automated Pickleball Reservation System</h3>
+            <p>
+              Built an automated reservation platform using Python and OpenClaw to secure high-demand
+              pickleball court bookings. Developed a Telegram bot for real-time notifications and booking
+              requests, and integrated external booking APIs with scheduling automation to improve booking
+              success rates.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Telegram Bot</span>
+              <span class="tag">Automation</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              Developed and deployed this responsive portfolio site, implemented with dynamic UI
+              interactions and modern UI/UX practices, hosted on AWS via S3 and CloudFront and deployed
+              with Terraform.
+            </p>
+            <div class="tag-list">
+              <span class="tag">AWS</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <a href="https://github.com/tsaik9520/my-portfolio-app" target="_blank" rel="noopener" class="card-link">View Source →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Programming Languages</h3>
+            <p>Python, Java, JavaScript, TypeScript, SQL, Bash, Groovy</p>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud &amp; Infrastructure</h3>
+            <p>AWS, AWS CloudFormation, AWS Lambda, AWS SNS, Azure, Terraform, Docker, Linux, GitHub Actions, Jenkins, Ansible</p>
+          </div>
+          <div class="skill-group">
+            <h3>Networking</h3>
+            <p>Infoblox (DNS, DHCP, IPAM), DDI, NIOS-X</p>
+          </div>
+          <div class="skill-group">
+            <h3>Platform &amp; Observability</h3>
+            <p>ServiceNow (ITOM, Flow Designer), Datadog, PagerDuty, Tableau, Atlassian Suite</p>
+          </div>
+          <div class="skill-group">
+            <h3>Web Technologies</h3>
+            <p>React, HTML5, CSS, REST APIs</p>
+          </div>
+        </div>
+
+        <div class="education-cert">
+          <div>
+            <h3>Education</h3>
+            <p><strong>Boston University</strong> — M.S. in Software Development (May 2023 – Aug 2025)</p>
+            <p><strong>University of Maryland, College Park</strong> — B.S. in Information Science (Aug 2018 – May 2022)</p>
+          </div>
+          <div>
+            <h3>Certification</h3>
+            <p>AWS Certified Cloud Practitioner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-container">
+        <h2>Get in Touch</h2>
+        <p>Interested in working together or just want to connect? Reach out below.</p>
+        <div class="contact-links">
+          <a href="mailto:ktsai23@icloud.com" class="btn btn-primary">Email Me</a>
+          <a href="https://linkedin.com/in/kevin-tsai99/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+          <a href="https://github.com/tsaik9520" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Kevin Tsai. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
